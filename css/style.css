@@ -609,3 +609,23 @@ padding:8px 16px;
 border-radius:6px;
 text-decoration:none;
 }
+
+.link-upload{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+
+    padding: 12px 22px;
+    background: #3a86ff;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.link-upload:hover{
+    background: #2a6fdb;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
