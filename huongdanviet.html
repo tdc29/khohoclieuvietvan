@@ -6,6 +6,83 @@
   <link rel="icon" type="image/png" href="images/LOGOHOME.PNG">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  >
+    <title>Hướng dẫn viết</title>
+
+    <style>
+
+        /* ====== BODY ====== */
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #dfe9f3, #ffffff);
+            text-align: center;
+        }
+
+        /* ====== CONTAINER ====== */
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 40px;
+
+            background: white;
+            border-radius: 20px;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* ====== TITLE ====== */
+
+        h1 {
+            color: #2f6b4f;
+        }
+
+        /* ====== TAB BUTTON ====== */
+
+        .tabs {
+            margin-top: 30px;
+        }
+
+        .tab-btn {
+            padding: 15px 25px;
+            margin: 10px;
+
+            border-radius: 30px;
+            border: 2px solid #2f6b4f;
+
+            background: white;
+            color: #2f6b4f;
+
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .tab-btn:hover {
+            background: #2f6b4f;
+            color: white;
+        }
+
+        .active {
+            background: #2f6b4f;
+            color: white;
+        }
+
+        /* ====== CONTENT ====== */
+
+        .content {
+            display: none;
+            margin-top: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 700px;
+            border: none;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -28,19 +105,114 @@
     </div>
 </nav>
 
-  <section class="hero">
-    <h1>Hướng dẫn viết</h1>
-    
-  </section>
+  <section class="card">
+    <h2 class="section-main-title">Hướng dẫn viết</h2>
 
-  <section class="card intro">
-    <h2 style="text-align: center;">🌟 DẤU THỜI GIAN 🌟</h2>
-    <p>Ba năm học dưới mái trường THPT Vinh Xuân trôi qua nhanh như một cái chớp mắt. Từ những ngày đầu còn bỡ ngỡ bước vào lớp 10, cho đến khi đã quen với nhịp học tập, những buổi kiểm tra, những tiếng cười vang lên trong giờ ra chơi, chúng em – tập thể lớp 12A1 – đã cùng nhau tạo nên biết bao kỷ niệm không thể nào quên.</p>
-    <p>“Dấu Thời Gian” không chỉ là một dự án, mà còn là cuốn nhật ký số ghi lại hành trình trưởng thành của cả một tập thể. Ở đây có những khoảnh khắc vui buồn, những lần nỗ lực hết mình cho kỳ thi, những buổi hoạt động sôi nổi, và cả những điều giản dị nhưng in sâu trong ký ức – một ánh mắt, một nụ cười, một lời động viên đúng lúc.</p>
-    <p>Trang web này được tạo nên với mong muốn lưu giữ lại những dấu mốc đẹp nhất của tuổi học trò – thứ mà sau này khi mỗi người đi trên một con đường riêng, vẫn có thể quay lại nhìn ngắm và mỉm cười. Đó là nơi để chúng em nhớ rằng: đã từng có một thời thanh xuân mang tên 12A1 – THPT Vinh Xuân, rực rỡ, chân thành và đầy ước mơ.</p>
-    <p>Hy vọng rằng “Dấu Thời Gian” sẽ là nơi kết nối ký ức, lưu giữ tình bạn, và trở thành một phần không thể thiếu trong hành trang trưởng thành của mỗi thành viên lớp 12A1.</p>
-    <p><em>Thanh xuân có thể trôi qua, nhưng dấu ấn của nó thì sẽ còn mãi.</em></p>
-  </section>
+     <div class="container">
+
+        <div class="tabs">
+
+            <button
+                class="tab-btn active"
+                onclick="showTab('truyen')">
+
+                Bài văn so sánh 2 tác phẩm truyện
+
+            </button>
+
+            <button
+                class="tab-btn"
+                onclick="showTab('tho')">
+
+                Bài văn so sánh 2 tác phẩm thơ
+
+            </button>
+
+            <button
+                class="tab-btn"
+                onclick="showTab('tuoitre')">
+
+                Bài văn nghị luận về một vấn đề liên quan đến tuổi trẻ
+
+            </button>
+
+        </div>
+
+
+        <!-- ====== CONTENT 1 ====== -->
+
+        <div
+            id="truyen"
+            class="content"
+            style="display:block">
+
+            <iframe src="Hướng dẫn viết bài văn so sánh 2 tác phẩm truyện.pdf"></iframe>
+
+        </div>
+
+
+        <!-- ====== CONTENT 2 ====== -->
+
+        <div
+            id="tho"
+            class="content">
+
+            <iframe src="Hướng dẫn viết bài văn so sánh 2 tác phẩm thơ.pdf"></iframe>
+
+        </div>
+
+
+        <!-- ====== CONTENT 3 ====== -->
+
+        <div
+            id="tuoitre"
+            class="content">
+
+            <iframe src="HƯỚNG DẪN VIẾT BÀI VĂN NGHỊ LUẬN VỀ MỘT VẤN ĐỀ LIÊN QUAN ĐẾN TUỔI TRẺ.pdf"></iframe>
+
+        </div>
+
+    </div>
+
+
+    <!-- ====== JAVASCRIPT ====== -->
+
+    <script>
+
+        function showTab(id) {
+
+            /* Ẩn tất cả nội dung */
+
+            let contents = document.querySelectorAll(".content");
+
+            contents.forEach(function(content) {
+                content.style.display = "none";
+            });
+
+
+            /* Hiện nội dung được chọn */
+
+            document.getElementById(id).style.display = "block";
+
+
+            /* Xóa active button */
+
+            let buttons = document.querySelectorAll(".tab-btn");
+
+            buttons.forEach(function(btn) {
+                btn.classList.remove("active");
+            });
+
+
+            /* Thêm active cho nút đang bấm */
+
+            event.target.classList.add("active");
+        }
+
+    </script>
+
+    
+</section>
 
   <footer class="footer">
   <div class="footer-top">
@@ -70,15 +242,15 @@
     </div>
 
     <div class="footer-col">
-      <h4>Gửi lời nhắn</h4>
-      <p>Hãy lưu giữ lại những cảm xúc<br>trước khi chúng ta trưởng thành!</p>
-      <a href="loinhan.html" class="footer-btn">✍ Gửi lời nhắn</a>
+      <h4>Đăng bài</h4>
+      <p>Hãy đăng tải những bài văn hay của bạn!</p>
+      <a href="dangbai.html" class="footer-btn">✍ Đăng bài</a>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    © 2026 Dấu Thời Gian – Lớp 12A1. All rights reserved.
+    © 2026 Kho học liệu viết văn – All rights reserved.
   </div>
 </footer>
 <div id="leaf-container"></div>
